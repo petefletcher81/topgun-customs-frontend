@@ -1,0 +1,23 @@
+[
+  {
+    "hero": "He-Man",
+    "name": "Peter Benjamin Parker",
+    "link": "http://marvel.com/characters/54/spider-man",
+    "img": "images/heman.jpg",
+    "size": 40000
+  },
+  {
+    "hero": "CAPTAIN MARVEL",
+    "name": "Carol Danvers",
+    "link": "http://marvel.com/characters/9/captain_marvel",
+    "img": "https://cdn.vox-cdn.com/thumbor/1_FJpObIbS2eacL4nl3NY_-FN5I=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13109253/CM_Teaser_1_Sheet.jpg",
+    "size": 40000
+  },
+  {
+    "hero": "HULK",
+    "name": "Robert Bruce Banner",
+    "link": "http://marvel.com/characters/25/hulk",
+    "img": "https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png",
+    "size": 40000
+  }
+]
