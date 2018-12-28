@@ -12,16 +12,18 @@ class App extends Component {
     console.log("hello");
     return (
       <div className="mainLayout">
-        <div className="App">
-          {postData.map(singlePost => {
-            return (
-              <Post
-                imageSrc={singlePost.img}
-                title={singlePost.hero}
-                description="this will be a desc"
-              />
-            );
-          })}
+        <div className="centerLayout">
+          <div className="postMain">
+            {postData.map(singlePost => {
+              return (
+                <Post
+                  imageSrc={singlePost.img}
+                  title={singlePost.hero}
+                  description="this will be a desc"
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     );
