@@ -1,26 +1,32 @@
 import React from "react";
 import "./Post.css";
-import DownVote from "../assets/downvote.png";
-import UpVote from "../assets/upvote.png";
-import Comment from "../assets/comment.png";
-import Like from "../assets/like.png";
+import PostModal from './PostModal.jsx'
 
 class Post extends React.Component {
+  state = {
+    show: false
+  }
+
+  showModal = () => {
+    this.setState({show:true})
+  }
+
   render() {
+    console.log(this.props)
     return (
       <div className="postContainer" height={this.props.height}>
+      {this.state.show ? <PostModal imageSrc={this.props.imageSrc}
+                    title={this.props.title}
+                    description="this will be a desc"/> : null}
         <h3 className="postHeader">{this.props.title}</h3>
         <img
           className="postImg"
           src={this.props.imageSrc}
           alt={this.props.title}
         />
-        <p classname="descPara">{this.props.description}</p>
         <div className="postButtons">
-          <img src={UpVote} alt="upVote-icon" />
-          <img src={DownVote} alt="downVote-icon" />
-          <img src={Comment} alt="comment-icon" />
-          <img src={Like} alt="like-icon" />
+          <button onClick={this.showModal} classname="viewPost">View Post</button>
+
         </div>
       </div>
     );

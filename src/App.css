@@ -12,12 +12,12 @@
   background-image: url("./assets/marvel.jpg");
 }
 
-.postMain {
-  text-align: center;
-  width: 700px;
-  background-color: white;
-}
 .postImg {
-  height: 500px;
-  width: 500px;
+  height: 100px;
+  width: 100px;
+}
+
+.postMain {
+  display: flex;
+  flex-wrap: wrap;
 }
