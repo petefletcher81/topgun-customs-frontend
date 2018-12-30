@@ -10,7 +10,7 @@ class App extends Component {
     posts: ["post1", "post2", "post3"]
   };
   render() {
-    console.log("hello");
+    
     return (
       <div>
         <Header />

@@ -12,7 +12,7 @@ class Post extends React.Component {
   }
 
   render() {
-    console.log(this.props)
+    
     return (
       <div className="postContainer" height={this.props.height}>
       {this.state.show ? <PostModal imageSrc={this.props.imageSrc}
