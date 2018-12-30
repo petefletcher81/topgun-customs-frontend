@@ -1,0 +1,13 @@
+.voteButtons {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    border: 1px 0 solid;
+    
+}
+
+.voteButtons img {
+    height: 70%;
+    width: 10%;
+    
+  }

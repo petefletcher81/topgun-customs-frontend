@@ -1,25 +1,26 @@
 import React from "react";
 import "./PostModal.css";
-import DownVote from "../assets/downvote.png";
-import UpVote from "../assets/upvote.png";
+import Votes from './Votes'
 import Comment from "../assets/comment.png";
 import Like from "../assets/like.png";
 
 class PostModal extends React.Component {
   state = {
-    toggleModal: true
+    toggleModal: true,
+    votes: 0,
   };
 
-  modalRef = React.createRef();
+  // modalRef = React.createRef();
 
-  toggleClose = event => {
-    console.log(this.modalRef.current.className);
-    if (this.modalRef.current.className === "modal") {
-      this.setState({ toggleModal: false });
-    }
-  };
+  // toggleClose = event => {
+  //   console.log(this.modalRef.current.className);
+  //   if (this.modalRef.current.className === "modal") {
+  //     this.setState({ toggleModal: false });
+  //   }
+  // };
 
   render() {
+    console.log(this.props)
     return (
       <div
         className="modal"
@@ -35,14 +36,13 @@ class PostModal extends React.Component {
           />
           <p classname="descPara">{this.props.description}</p>
           <div className="modalPostButtons">
-            <img src={UpVote} alt="upVote-icon" />
-            <img src={DownVote} alt="downVote-icon" />
             <img src={Comment} alt="comment-icon" />
             <img src={Like} alt="like-icon" />
+           <Votes />
           </div>
         </div>
         <div className="close">
-          <button onClick={this.toggleClose}>Close</button>
+          <button onClick={this.props.ordered}>Close</button>
         </div>
       </div>
     );

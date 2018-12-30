@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   background-color: black;
+  height: 70vh;
 }
 
 .centerLayout {
+  
   display: flex;
   background-color: grey;
   width: 70%;

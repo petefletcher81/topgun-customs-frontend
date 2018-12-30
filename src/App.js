@@ -6,9 +6,7 @@ import Header from "./components/Header";
 import "./App.css";
 
 class App extends Component {
-  state = {
-    posts: ["post1", "post2", "post3"]
-  };
+ 
   render() {
     
     return (
