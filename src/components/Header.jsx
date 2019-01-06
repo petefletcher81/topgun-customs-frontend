@@ -1,5 +1,5 @@
 import React from "react";
-import "./Header.css";
+import "./Header.scss";
 import Topgun from "../assets/topgun-header.jpg";
 import Facebook from "../assets/facebook.png";
 import Twitter from "../assets/twitter.png";

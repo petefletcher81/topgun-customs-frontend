@@ -1,5 +1,5 @@
 import React from "react";
-import "./Post.css";
+import "./Post.scss";
 import PostModal from './PostModal.jsx';
  
 class Post extends React.Component {

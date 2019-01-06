@@ -3,7 +3,7 @@ import DownVote from "../assets/downvote.png";
 import UpVote from "../assets/upvote.png";
 import {connect} from 'react-redux';
 import * as actionTypes from '../store/actions'
-import './Votes.css'
+import './Votes.scss'
 
 class Votes extends React.Component {
     state = { 

@@ -3,7 +3,7 @@ import Post from "./components/Post";
 import postData from "./data/post.json";
 import Header from "./components/Header";
 
-import "./App.css";
+import "./App.scss";
 
 class App extends Component {
  

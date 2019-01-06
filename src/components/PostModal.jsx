@@ -1,5 +1,5 @@
 import React from "react";
-import "./PostModal.css";
+import "./PostModal.scss";
 import Votes from './Votes'
 import Comment from "../assets/comment.png";
 import Like from "../assets/like.png";
